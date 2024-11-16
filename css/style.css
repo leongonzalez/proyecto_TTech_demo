@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/********************* Estilo header *************/
+.header {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;      
+    padding: 20px 20px;        
+    background-color:black;     
+  }
+    .logo{
+        display: flex;
+    }
+    .logo img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 3rem;
+      margin-left: 1.1rem;
+      border-radius: 1.1rem;
+   
+} 
+ 
+  .logo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+  
+ 
+  .navbar {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex; 
+    flex-wrap: wrap;           
+    list-style: none;          
+    margin: 0;                 
+    padding: 0;   
+    font-size: 1.2rem;  
+         
+  }
+  
+  .nav-list li { margin-right: 2rem; }
+  .nav-list a {
+    color: white;              
+    text-decoration: none;    
+    padding: 10px 15px;        
+    transition: background-color 0.3s ease; 
+    font-family: Roboto;     
+  }
+  .nav-list a:hover {
+  color:#C7CACF ; 
+  text-decoration: underline;
+  }
+
+  /******************estilos banner Inicio**************/
+
+  .banner {
+   display: block;
+    padding: 2.5rem;
+    background-image: url(../img/cartera_backg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+.banner-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  text-align: center;
+}
+
+/**************estilos nosotros**********/
+.nosotros{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(black,grey);
+  color: white;
+/* background-color: black; */
+}
+.nosotros h2{
+  /* color: black; */
+  color:white;
+  padding-top: 60px;
+ text-align: center;
+ font-size: 2.5rem;
+}
+.nosotros p{
+  font-size: 22px;
+  font-family: Nunito;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+ }
+
+ .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#F0F0F0;
+  animation: cambiar 10s ease-in-out infinite;
+  height: 100vh;
+  width: 100%;
+  -webkit-animation: cambiar 10s ease-in-out infinite;
+}
+
+ /*********footer*************/
+ .foot{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ .foot ul li{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+ }
+.foot p{
+  font-size: 22px;
+}
+ .fa-brands{
+  font-size: 36px;
+  color: white;
+  margin: 30px;
+  transition: all 300ms;
+ 
+}
+ .fa-brands:hover{
+  transform: scale(1,02 );
+ 
+} 
+
+
+/*******estilo productos************/
+.productos_titulo{
+text-align: center;
+  font-size: 3rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+
+}
+.tarjeta{
+  border: 2px solid black;
+  height: 350px;
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 40px; 
+}
+ .imagen{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.tarjeta_conten h2, h3, p{
+  text-align: center;
+}
+.tarjeta_conten p{
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+/***************reseñas*******/
+.reseñas_titulo{
+font-size: 3rem;
+padding-top: 40px;
+padding-bottom: 40px;
+text-align: center;
+}
+.reseñas{
+  height: 100vh;
+  width: 100%;
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.tarjeta_reseña{
+  height: 250px;
+  width: 300px;
+  border: solid 2px grey;
+}
+.tarjeta_reseña h3{
+ margin-top:  25px; 
+ margin-bottom: 25px;
+}
+.tarjeta_reseña p{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/************contacto********/
+.contacto_titulo{
+ font-size: 3rem;
+padding-top: 25px;
+padding-bottom: 25px;
+text-align: center;
+}
+.formulario{
+  height:100vh;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 1rem;
+  align-items: center;
+
+}
+.subtitulo{
+  font-size: 1.4rem;
+}
+.formulario label, input{
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+textarea{
+  width: 100%;
+  font-size: 1.2rem;
+}
+.boton{
+  padding: 0.3rem;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding: 10px;
+
+}
+.boton:hover{
+  background: #5F6062;
+  color: white;
+ 
+}
+
+/************media queries**********/
+@media screen and (max-width: 1024px){
+
+  .formulario{
+    width: 75%;
+    margin-left: 12.5%;
+    font-size: 1rem;
+    align-items: center;
+    
+  
+  }
+  .subtitulo{
+    font-size: 1.4rem;
+  }
+  .formulario label, input{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  textarea{
+   
+    width: 95%;
+    font-size: 1.2rem;
+    margin-left: 2.5%;
+    
+  }
+}
+@media screen and (max-width: 800px){
+  .formulario{
+   
+  width: 90%;
+  margin-left: 5%;
+  font-size: 0.7rem;
+  align-items: center;
+ 
+
+}
+.subtitulo{
+  font-size: 1.2rem;
+}
+.formulario label, input{
+width: 60%;
+margin-left: 20%;
+}
+.termino_cond{
+  width:30%;
+}
+
+
+textarea{
+  width:60%;
+  font-size: 1rem;
+  margin-left: 20%;
+}
+.fa-brands{
+  font-size: 24px;
+ 
+}
+.copy{
+  width: 40%;
+}
+}
